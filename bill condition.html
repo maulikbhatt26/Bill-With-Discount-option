@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script>
+function chk(){
+
+I1=parseInt(document.getElementById('i1').value);
+I2=parseInt(document.getElementById('i2').value);
+I3=parseInt(document.getElementById('i3').value);
+
+t=I1+I2+I3;
+if (t>1000){
+d= (10/100)*t;
+}
+else{ 
+d= (5/100)*t;
+}
+
+fb=t-d; 
+
+
+document.getElementById('t1').value=t;
+document.getElementById('d1').value=d;
+document.getElementById('fb1').value=fb;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</head>
+
+
+<body bgcolor="#6666CC">
+<pre>
+<form name="f1">
+
+Item 1: <input type="text" placeholder="MRP1" id="i1" />
+
+Item 2: <input type="text" placeholder="MRP2" id="i2" />
+
+Item 3: <input type="text" placeholder="MRP3" id="i3" />
+
+<input type="button" value="ok" onclick="chk();" />
+
+Total Bill: <input type="text" placeholder="Bill" id="t1" />
+
+Discount: <input type="text" placeholder="Discount" id="d1" />
+
+Final Bill: <input type="text" placeholder="Final Bill" id="fb1" />
+ 
+
+
+</form>
+
+
+</pre>
+
+</body>
+</html>
